@@ -12,7 +12,7 @@ export default class Socbar extends Component {
                                 className="soc-link"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                href="https://mobile.twitter.com/gbabymtl"
+                                href="https://twitter.com/graemedstewart"
                                 tabIndex={0}>
                                 <IoLogoTwitter />
                             </a>
@@ -22,7 +22,7 @@ export default class Socbar extends Component {
                                 className="soc-link"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                href="https://www.nba.com"
+                                href="https://www.linkedin.com/in/graeme-stewart-b061401a2"
                                 tabIndex={0}>
                                 <IoLogoLinkedin />
                             </a>

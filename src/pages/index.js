@@ -32,7 +32,7 @@ export default () => (
 		<Section
 			title="about"
 			id="2">
-			<p><div><IoMdGlobe class="icon" /></div>I'm a junior web developer familiar with <span class="highlight">HTML/CSS</span>, <span class="highlight">JavaScript</span>, and <span class="highlight">React</span>. I built this website from scratch using these tools.</p>
+			<p><div><IoMdGlobe class="icon" /></div>I'm a junior web developer based in Montréal familiar with <span class="highlight">HTML/CSS</span>, <span class="highlight">JavaScript</span>, and <span class="highlight">React</span>. I built this website from scratch using these tools.</p>
 			<p><div><IoMdCheckboxOutline class="icon" /></div>I'm skilled in <span class="highlight">Java</span> and <span class="highlight">C/C++</span>, and know how to implement web services standards like <span class="highlight">REST</span> and <span class="highlight">SOAP</span>.</p>
 			<p><div><IoMdPhonePortrait class="icon" /></div>I have experience building mobile apps with <span class="highlight">React Native</span> and <span class="highlight">Android Studio</span>.</p>
 			<p><div><IoMdMusicalNotes class="icon" /></div>I also produce electronic music. My favourite genres to produce are house, techno, ambient, and downtempo.</p>
