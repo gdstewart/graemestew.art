@@ -10,7 +10,7 @@ export default function Section({ id, title, header, children }) {
 		);
 	} else
 		return (
-			<div className="section" id={id}>
+			<div className={title == "contact" ? "section-last" : "section"} id={id}>
 				<h2>{title}</h2>
 				{children}
 			</div>

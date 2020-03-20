@@ -89,8 +89,8 @@ export default class Navbar extends Component {
 						</li>
 						<li className="nav-item">
 							<Link
-								className={this.state.active5 ? "nav-link active" : "nav-link"}
-								activeClass={this.state.clicked ? "nav-link" : "nav-link active"}
+								className={this.state.active5 ? "nav-link active hover-fade-opacity" : "nav-link hover-fade-opacity"}
+								activeClass={this.state.clicked ? "nav-link hover-fade-opacity" : "nav-link active hover-fade-opacity"}
 								to="5"
 								spy={true}
 								smooth={true}
