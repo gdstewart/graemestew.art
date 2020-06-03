@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Section({ id, title, header, children }) {
+export default function Section({ id, title, header, last, children }) {
 	if (header) {
 		return (
 			<div className="header" id={id}>
@@ -10,7 +10,7 @@ export default function Section({ id, title, header, children }) {
 		);
 	} else
 		return (
-			<div className={title == "contact" ? "section-last" : "section"} id={id}>
+			<div className={last ? "section last" : "section"} id={id}>
 				<h2>{title}</h2>
 				{children}
 			</div>

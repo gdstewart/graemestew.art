@@ -7,7 +7,7 @@ import Socbar from "../components/socbar";
 import Footer from "../components/footer";
 import ColorSelect, { setAccentColor } from "../components/color-select";
 import { IoMdGlobe, IoMdCheckboxOutline, IoMdPhonePortrait, IoMdMusicalNotes, IoLogoGithub, IoLogoYoutube } from "react-icons/io";
-import { FaBandcamp } from "react-icons/fa";
+import { FaGooglePlay, FaBandcamp } from "react-icons/fa";
 
 if (typeof window !== "undefined") {
 	setAccentColor();
@@ -42,8 +42,8 @@ export default () => (
 			title="resume"
 			id="3">
 			<h3>education</h3>
-			<p>2009-2012 B.A. in Linguistics, Saint Mary's University</p>
-			<p>2018-2020 Cert. in Computers and Information Technology, McGill University</p>
+			<p>2009-2012 B.A. in Linguistics, Saint Mary's University, Halifax</p>
+			<p>2018-2020 Cert. in Computers and Information Technology, McGill University, Montréal</p>
 			<ul class="resume-list">
 				<li class="resume-list-item">Data structures & algorithms</li>
 				<li class="resume-list-item">Web development/services</li>
@@ -61,14 +61,14 @@ export default () => (
 			id="4">
 			<div class="portfolio-grid">
 				<div class="portfolio-grid-cell">
-					<div class="portfolio-grid-cell-title">graemestew.art</div>
+					<div class="portfolio-grid-cell-title"><a href="https://github.com/gdstewart/graemestew.art" target="_blank" rel="noopener noreferrer">graemestew.art</a></div>
 					<div class="portfolio-grid-cell-blurb">Source code for this site</div>
 					<div class="portfolio-grid-cell-link-bar">
 						<div class="portfolio-grid-cell-link"><a href="https://github.com/gdstewart/graemestew.art" target="_blank" rel="noopener noreferrer"><IoLogoGithub class="link-icon" /></a></div>
 					</div>
 				</div>
 				<div class="portfolio-grid-cell">
-					<div class="portfolio-grid-cell-title">orb-web</div>
+					<div class="portfolio-grid-cell-title"><a href="https://orb-web.now.sh" target="_blank" rel="noopener noreferrer">orb-web</a></div>
 					<div class="portfolio-grid-cell-blurb">A handy tool that aggregates various online, non-terrestrial radio stations on a single site</div>
 					<div class="portfolio-grid-cell-link-bar">
 						<div class="portfolio-grid-cell-link"><a href="https://orb-web.now.sh" target="_blank" rel="noopener noreferrer"><IoMdGlobe class="link-icon" /></a></div>
@@ -76,21 +76,30 @@ export default () => (
 					</div>
 				</div>
 				<div class="portfolio-grid-cell">
-					<div class="portfolio-grid-cell-title">orb-mobile</div>
-					<div class="portfolio-grid-cell-blurb">Mobile version of orb</div>
+					<div class="portfolio-grid-cell-title"><a href="https://play.google.com/store/apps/details?id=com.orbmobile" target="_blank" rel="noopener noreferrer">orb-mobile</a></div>
+					<div class="portfolio-grid-cell-blurb">Mobile version of orb (Android only)</div>
 					<div class="portfolio-grid-cell-link-bar">
+						<div class="portfolio-grid-cell-link"><a href="https://play.google.com/store/apps/details?id=com.orbmobile" target="_blank" rel="noopener noreferrer"><FaGooglePlay class="link-icon" /></a></div>
 						<div class="portfolio-grid-cell-link"><a href="https://github.com/gdstewart/orb-mobile" target="_blank" rel="noopener noreferrer"><IoLogoGithub class="link-icon" /></a></div>
 					</div>
 				</div>
 				<div class="portfolio-grid-cell">
-					<div class="portfolio-grid-cell-title">SOUL SEEKER (2019)</div>
+					<div class="portfolio-grid-cell-title"><a href="https://sekvens.now.sh" target="_blank" rel="noopener noreferrer">sekvens</a></div>
+					<div class="portfolio-grid-cell-blurb">A cool audiovisual website me and <a href="https://github.com/nealstewart" target="_blank" rel="noopener noreferrer">@nealstewart</a> are working on</div>
+					<div class="portfolio-grid-cell-link-bar">
+						<div class="portfolio-grid-cell-link"><a href="https://sekvens.now.sh" target="_blank" rel="noopener noreferrer"><IoMdGlobe class="link-icon" /></a></div>
+						<div class="portfolio-grid-cell-link"><a href="https://github.com/gdstewart/sekvens" target="_blank" rel="noopener noreferrer"><IoLogoGithub class="link-icon" /></a></div>
+					</div>
+				</div>
+				<div class="portfolio-grid-cell">
+					<div class="portfolio-grid-cell-title"><a href="https://www.youtube.com/watch?v=TE5d_FnDIgk" target="_blank" rel="noopener noreferrer">SOUL SEEKER (2019)</a></div>
 					<div class="portfolio-grid-cell-blurb">30 minutes of slowed-down remixes of 70s and 80s jazz and downtempo music</div>
 					<div class="portfolio-grid-cell-link-bar">
 						<div class="portfolio-grid-cell-link"><a href="https://www.youtube.com/watch?v=TE5d_FnDIgk" target="_blank" rel="noopener noreferrer"><IoLogoYoutube class="link-icon" /></a></div>
 					</div>
 				</div>
 				<div class="portfolio-grid-cell">
-					<div class="portfolio-grid-cell-title">If I See You (2017)</div>
+					<div class="portfolio-grid-cell-title"><a href="https://gdoro.bandcamp.com/" target="_blank" rel="noopener noreferrer">If I See You (2017)</a></div>
 					<div class="portfolio-grid-cell-blurb">Collaboration between me and my friend Dorothea, 90s R&B and vocal house</div>
 					<div class="portfolio-grid-cell-link-bar">
 						<div class="portfolio-grid-cell-link"><a href="https://gdoro.bandcamp.com/" target="_blank" rel="noopener noreferrer"><FaBandcamp class="link-icon" /></a></div>
@@ -100,7 +109,8 @@ export default () => (
 		</Section>
 		<Section
 			title="contact"
-			id="5">
+			id="5"
+			last>
 			<form action="https://getform.io/f/0676626b-76a4-46ee-bb5d-f30a53b9e3fd" method="POST">
 				<ul class="contact-list">
 					<li class="contact-list-item"><input type="text" name="name" placeholder="Name" /></li>
