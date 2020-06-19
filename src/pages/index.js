@@ -2,15 +2,18 @@ import React from "react";
 import Helmet from "react-helmet";
 import Layout from "../components/layout";
 import Navbar from "../components/navbar";
+import MobileNav from "../components/mobile-nav";
 import Section from "../components/section";
 import Socbar from "../components/socbar";
 import Footer from "../components/footer";
-import ColorSelect, { setAccentColor } from "../components/color-select";
+import AccentSelect, { setAccentColor } from "../components/accent-select";
+import ThemeSelect, { setThemeColor } from "../components/theme-select";
 import { IoMdGlobe, IoMdCheckboxOutline, IoMdPhonePortrait, IoMdMusicalNotes, IoLogoGithub, IoLogoYoutube } from "react-icons/io";
 import { FaGooglePlay, FaBandcamp } from "react-icons/fa";
 
 if (typeof window !== "undefined") {
 	setAccentColor();
+	setThemeColor();
 	let vh = window.innerHeight * 0.01;
 	document.documentElement.style.setProperty("--vh", `${vh}px`);
 }
@@ -23,7 +26,11 @@ export default () => (
 			<link rel="canonical" href="https://graemestew.art/" />
 		</Helmet>
 		<Navbar />
-		<ColorSelect />
+		<MobileNav />
+		<div className="custom-bar">
+			<ThemeSelect />
+			<AccentSelect />
+		</div>
 		<Section
 			title="Graeme Stewart"
 			id="1"
@@ -58,51 +65,52 @@ export default () => (
 		</Section>
 		<Section
 			title="portfolio"
-			id="4">
+			id="4"
+			tall>
 			<div class="portfolio-grid">
 				<div class="portfolio-grid-cell">
 					<div class="portfolio-grid-cell-title"><a href="https://github.com/gdstewart/graemestew.art" target="_blank" rel="noopener noreferrer">graemestew.art</a></div>
 					<div class="portfolio-grid-cell-blurb">Source code for this site</div>
 					<div class="portfolio-grid-cell-link-bar">
-						<div class="portfolio-grid-cell-link"><a href="https://github.com/gdstewart/graemestew.art" target="_blank" rel="noopener noreferrer"><IoLogoGithub class="link-icon" /></a></div>
+						<div class="portfolio-grid-cell-link"><a href="https://github.com/gdstewart/graemestew.art" target="_blank" rel="noopener noreferrer"><IoLogoGithub class="link-icon" aria-label="web-link" /></a></div>
 					</div>
 				</div>
 				<div class="portfolio-grid-cell">
 					<div class="portfolio-grid-cell-title"><a href="https://orb-web.now.sh" target="_blank" rel="noopener noreferrer">orb-web</a></div>
 					<div class="portfolio-grid-cell-blurb">A handy tool that aggregates various online, non-terrestrial radio stations on a single site</div>
 					<div class="portfolio-grid-cell-link-bar">
-						<div class="portfolio-grid-cell-link"><a href="https://orb-web.now.sh" target="_blank" rel="noopener noreferrer"><IoMdGlobe class="link-icon" /></a></div>
-						<div class="portfolio-grid-cell-link"><a href="https://github.com/gdstewart/orb-web" target="_blank" rel="noopener noreferrer"><IoLogoGithub class="link-icon" /></a></div>
+						<div class="portfolio-grid-cell-link"><a href="https://orb-web.now.sh" target="_blank" rel="noopener noreferrer"><IoMdGlobe class="link-icon" aria-label="web-link" /></a></div>
+						<div class="portfolio-grid-cell-link"><a href="https://github.com/gdstewart/orb-web" target="_blank" rel="noopener noreferrer"><IoLogoGithub class="link-icon" aria-label="web-link" /></a></div>
 					</div>
 				</div>
 				<div class="portfolio-grid-cell">
 					<div class="portfolio-grid-cell-title"><a href="https://play.google.com/store/apps/details?id=com.orbmobile" target="_blank" rel="noopener noreferrer">orb-mobile</a></div>
 					<div class="portfolio-grid-cell-blurb">Mobile version of orb (Android only)</div>
 					<div class="portfolio-grid-cell-link-bar">
-						<div class="portfolio-grid-cell-link"><a href="https://play.google.com/store/apps/details?id=com.orbmobile" target="_blank" rel="noopener noreferrer"><FaGooglePlay class="link-icon" /></a></div>
-						<div class="portfolio-grid-cell-link"><a href="https://github.com/gdstewart/orb-mobile" target="_blank" rel="noopener noreferrer"><IoLogoGithub class="link-icon" /></a></div>
+						<div class="portfolio-grid-cell-link"><a href="https://play.google.com/store/apps/details?id=com.orbmobile" target="_blank" rel="noopener noreferrer"><FaGooglePlay class="link-icon" aria-label="web-link" /></a></div>
+						<div class="portfolio-grid-cell-link"><a href="https://github.com/gdstewart/orb-mobile" target="_blank" rel="noopener noreferrer"><IoLogoGithub class="link-icon" aria-label="web-link" /></a></div>
 					</div>
 				</div>
 				<div class="portfolio-grid-cell">
 					<div class="portfolio-grid-cell-title"><a href="https://sekvens.now.sh" target="_blank" rel="noopener noreferrer">sekvens</a></div>
 					<div class="portfolio-grid-cell-blurb">A cool audiovisual website me and <a href="https://github.com/nealstewart" target="_blank" rel="noopener noreferrer">@nealstewart</a> are working on</div>
 					<div class="portfolio-grid-cell-link-bar">
-						<div class="portfolio-grid-cell-link"><a href="https://sekvens.now.sh" target="_blank" rel="noopener noreferrer"><IoMdGlobe class="link-icon" /></a></div>
-						<div class="portfolio-grid-cell-link"><a href="https://github.com/gdstewart/sekvens" target="_blank" rel="noopener noreferrer"><IoLogoGithub class="link-icon" /></a></div>
+						<div class="portfolio-grid-cell-link"><a href="https://sekvens.now.sh" target="_blank" rel="noopener noreferrer"><IoMdGlobe class="link-icon" aria-label="web-link" /></a></div>
+						<div class="portfolio-grid-cell-link"><a href="https://github.com/gdstewart/sekvens" target="_blank" rel="noopener noreferrer"><IoLogoGithub class="link-icon" aria-label="web-link" /></a></div>
 					</div>
 				</div>
 				<div class="portfolio-grid-cell">
 					<div class="portfolio-grid-cell-title"><a href="https://www.youtube.com/watch?v=TE5d_FnDIgk" target="_blank" rel="noopener noreferrer">SOUL SEEKER (2019)</a></div>
 					<div class="portfolio-grid-cell-blurb">30 minutes of slowed-down remixes of 70s and 80s jazz and downtempo music</div>
 					<div class="portfolio-grid-cell-link-bar">
-						<div class="portfolio-grid-cell-link"><a href="https://www.youtube.com/watch?v=TE5d_FnDIgk" target="_blank" rel="noopener noreferrer"><IoLogoYoutube class="link-icon" /></a></div>
+						<div class="portfolio-grid-cell-link"><a href="https://www.youtube.com/watch?v=TE5d_FnDIgk" target="_blank" rel="noopener noreferrer"><IoLogoYoutube class="link-icon" aria-label="web-link" /></a></div>
 					</div>
 				</div>
 				<div class="portfolio-grid-cell">
 					<div class="portfolio-grid-cell-title"><a href="https://gdoro.bandcamp.com/" target="_blank" rel="noopener noreferrer">If I See You (2017)</a></div>
 					<div class="portfolio-grid-cell-blurb">Collaboration between me and my friend Dorothea, 90s R&B and vocal house</div>
 					<div class="portfolio-grid-cell-link-bar">
-						<div class="portfolio-grid-cell-link"><a href="https://gdoro.bandcamp.com/" target="_blank" rel="noopener noreferrer"><FaBandcamp class="link-icon" /></a></div>
+						<div class="portfolio-grid-cell-link"><a href="https://gdoro.bandcamp.com/" target="_blank" rel="noopener noreferrer"><FaBandcamp class="link-icon" aria-label="web-link" /></a></div>
 					</div>
 				</div>
 			</div>
@@ -113,9 +121,9 @@ export default () => (
 			last>
 			<form action="https://getform.io/f/0676626b-76a4-46ee-bb5d-f30a53b9e3fd" method="POST">
 				<ul class="contact-list">
-					<li class="contact-list-item"><input type="text" name="name" placeholder="Name" /></li>
-					<li class="contact-list-item"><input type="email" name="email" placeholder="Email" /></li>
-					<li class="contact-list-item"><textarea name="message" placeholder="Message" rows="3" cols="50" /></li>
+					<li class="contact-list-item"><input type="text" name="name" placeholder="Name" aria-label="name-field" /></li>
+					<li class="contact-list-item"><input type="email" name="email" placeholder="Email" aria-label="email-field" /></li>
+					<li class="contact-list-item"><textarea name="message" placeholder="Message" rows="3" cols="50" aria-label="message-field" /></li>
 					<li class="contact-list-item" id="submit"><button type="submit">Send</button></li>
 				</ul>
 			</form>

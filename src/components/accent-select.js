@@ -10,10 +10,10 @@ export function setAccentColor() {
     document.documentElement.style.setProperty("--accent-color", accentColor);
 }
 
-export default function ColorSelect({ children }) {
+export default function AccentSelect({ children }) {
     return (
         <div
-            className="color-select"
+            className="accent-select"
             role="button"
             tabIndex={0}
             onClick={() => setAccentColor()}

@@ -43,7 +43,7 @@ export default class Navbar extends Component {
 								to="2"
 								spy={true}
 								smooth={true}
-								offset={0}
+								offset={1}
 								duration={500}
 								tabIndex={0}
 								onClick={() => {
@@ -60,7 +60,7 @@ export default class Navbar extends Component {
 								to="3"
 								spy={true}
 								smooth={true}
-								offset={0}
+								offset={-1}
 								duration={500}
 								tabIndex={0}
 								onClick={() => {
@@ -77,7 +77,7 @@ export default class Navbar extends Component {
 								to="4"
 								spy={true}
 								smooth={true}
-								offset={0}
+								offset={-1}
 								duration={500}
 								tabIndex={0}
 								onClick={() => {
@@ -94,7 +94,7 @@ export default class Navbar extends Component {
 								to="5"
 								spy={true}
 								smooth={true}
-								offset={0}
+								offset={-1}
 								duration={500}
 								tabIndex={0}
 								onClick={() => {
