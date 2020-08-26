@@ -40,7 +40,7 @@ export default () => (
 		<Section
 			title="about"
 			id="2">
-			<p><div><IoMdGlobe class="icon" /></div>I'm a junior web developer based in Montréal familiar with <span class="highlight">HTML/CSS</span>, <span class="highlight">JavaScript</span>, and <span class="highlight">React</span> (including <span class="highlight">Gatsby</span> and <span class="highlight">Next.JS</span>). I built this website from scratch using some of these tools.</p>
+			<p><div><IoMdGlobe class="icon" /></div>I'm a junior web developer based in Halifax familiar with <span class="highlight">HTML/CSS</span>, <span class="highlight">JavaScript</span>, and <span class="highlight">React</span> (including <span class="highlight">Gatsby</span> and <span class="highlight">Next.JS</span>). I built this website from scratch using some of these tools.</p>
 			<p><div><IoMdCheckboxOutline class="icon" /></div>I'm skilled in <span class="highlight">Java</span> and <span class="highlight">C/C++</span>, and know how to implement web services standards like <span class="highlight">REST</span> and <span class="highlight">SOAP</span>.</p>
 			<p><div><IoMdPhonePortrait class="icon" /></div>I have experience building mobile apps with <span class="highlight">React Native</span> and <span class="highlight">Android Studio</span>.</p>
 			<p><div><IoMdMusicalNotes class="icon" /></div>I also produce electronic music. My favourite genres to produce are house, techno, ambient, and downtempo.</p>
@@ -60,8 +60,10 @@ export default () => (
 				<li class="resume-list-item">Operating systems admin.</li>
 				<li class="resume-list-item">Network admin.</li>
 			</ul>
+			{/*
 			<h3>work</h3>
 			<p>2016-2020 Barista, Cafe Myriade</p>
+			*/}
 		</Section>
 		<Section
 			title="portfolio"
@@ -69,10 +71,11 @@ export default () => (
 			tall>
 			<div class="portfolio-grid">
 				<div class="portfolio-grid-cell">
-					<div class="portfolio-grid-cell-title"><a href="https://github.com/gdstewart/graemestew.art" target="_blank" rel="noopener noreferrer">graemestew.art</a></div>
-					<div class="portfolio-grid-cell-blurb">Source code for this site</div>
+					<div class="portfolio-grid-cell-title"><a href="https://ddw-theme-creator.vercel.app/" target="_blank" rel="noopener noreferrer">.ddw Theme Creator</a></div>
+					<div class="portfolio-grid-cell-blurb">Theme creator for WynDynamicDesktop</div>
 					<div class="portfolio-grid-cell-link-bar">
-						<div class="portfolio-grid-cell-link"><a href="https://github.com/gdstewart/graemestew.art" target="_blank" rel="noopener noreferrer"><IoLogoGithub class="link-icon" aria-label="web-link" /></a></div>
+						<div class="portfolio-grid-cell-link"><a href="https://ddw-theme-creator.vercel.app/" target="_blank" rel="noopener noreferrer"><IoMdGlobe class="link-icon" aria-label="web-link" /></a></div>
+						<div class="portfolio-grid-cell-link"><a href="https://github.com/gdstewart/ddw-theme-creator" target="_blank" rel="noopener noreferrer"><IoLogoGithub class="link-icon" aria-label="web-link" /></a></div>
 					</div>
 				</div>
 				<div class="portfolio-grid-cell">
